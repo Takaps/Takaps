@@ -30,7 +30,7 @@ export const workSlider = {
           link: '/projects',
         },
         {
-          title: 'title',
+          title: 'Dagupan',
           path: '/thumb2.jpg',
           link: '/projects',
         },
