@@ -322,7 +322,7 @@ const About = () => {
                 {aboutData[index].info.map((item, itemIndex)=> {
                   return (
                     <SwiperSlide  
-                      key={itemIndex} 
+                      key={item} 
                       className='flex-0 flex-col md:flex-row w-max gap-x-2 items-center text-white/60 hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 scroll-smooth' style={{scrollBehavior:'smooth'}}>
                     
                       {/* title */}
@@ -331,7 +331,7 @@ const About = () => {
                       <div className='flex gap-x-4'>
                         
                         {/* icons */}
-                        {item.icons?.map((icon, itemIndex)=> {
+                        {item.icons?.map((icon, item)=> {
                           return <div className='text-2xl text-white'>{icon}</div>;
                         })}
                       </div>
