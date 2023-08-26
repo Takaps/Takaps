@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 
-
-
 // icons
 import {
   FaHtml5,
@@ -194,8 +192,7 @@ import 'swiper/css/pagination';
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console [index, setIndex] = useState(0);
-
+  console.log(index);
   
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
@@ -322,7 +319,7 @@ const About = () => {
                 {aboutData[index].info.map((item, itemIndex)=> {
                   return (
                     <SwiperSlide  
-                      key={item} 
+                      key={itemIndex} 
                       className='flex-0 flex-col md:flex-row w-max gap-x-2 items-center text-white/60 hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 scroll-smooth' style={{scrollBehavior:'smooth'}}>
                     
                       {/* title */}
@@ -331,7 +328,7 @@ const About = () => {
                       <div className='flex gap-x-4'>
                         
                         {/* icons */}
-                        {item.icons?.map((icon, item)=> {
+                        {item.icons?.map((icon, itemIndex)=> {
                           return <div className='text-2xl text-white'>{icon}</div>;
                         })}
                       </div>
