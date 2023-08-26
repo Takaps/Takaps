@@ -276,6 +276,7 @@ const About = () => {
           className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
         >
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+
             {aboutData.map((item, itemIndex)=> {
               return (
                 <div
@@ -329,7 +330,7 @@ const About = () => {
                         
                         {/* icons */}
                         {item.icons?.map((icon, itemIndex)=> {
-                          return <div className='text-2xl text-white'>{icon}</div>;
+                          return <div key={itemIndex} className='text-2xl text-white'>{icon}</div>;
                         })}
                       </div>
                     </SwiperSlide>
